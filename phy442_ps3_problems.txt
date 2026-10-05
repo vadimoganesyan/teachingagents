@@ -1,0 +1,51 @@
+PHY442 (Fall 2026) Problem Set 3: problems 3.7G, 4.4 (extended), 4.16b. Verbatim statements for the PS3 tutor agent, for copy-paste. Textbook: Auletta, Fortunato, Parisi. Notation is plain Unicode as in the problem set (ħ, σ, κ, ℰ).
+
+
+=== PROBLEM 3.7G: Free Gaussian wave packet ===
+**3.7G (Gaussian version of Prob. 3.7).** A free particle of mass m has the real initial wave function
+
+ψ(x, 0) = (2πσ²)^{−1/4} exp(−x²/4σ²).
+
+(a) At t = 0 show ⟨x̂⟩ = ⟨p̂⟩ = 0, Δx = σ, Δp = ħ/2σ: a minimum-uncertainty state.
+
+(b) Find φ(p) = ψ̃(p, 0), multiply by the free propagator e^{−ip²t/2mħ}, transform back, and show |ψ(x, t)|² stays Gaussian with
+
+Δx(t) = σ √(1 + (ħt/2mσ²)²).
+
+Identify the spreading time τ = 2mσ²/ħ and evaluate it for an electron with σ = 1 Å and for a 1 g dust grain with σ = 1 μm.
+
+(c) Show ⟨x̂⟩ₜ = 0 for all t, both from the explicit ψ(x, t) and from Ehrenfest (Sec. 3.7) plus conservation of ⟨p̂⟩. Then prove the general statement: any real normalizable ψ(x, 0) has ⟨p̂⟩ = 0, so ⟨x̂⟩ is constant under free evolution.
+
+(d) Write an initial state with the same |ψ(x, 0)|² for which ⟨x̂⟩ₜ = vt. Verify ⟨p̂⟩ = mv, ⟨x̂⟩ₜ = vt, and that Δx(t) is unchanged from (b). Why is this consistent with (c)?
+
+(e) Numerics. With m = ħ = σ = v = 1, put the state of (d) on a grid, evolve it in momentum space with the FFT, and plot ⟨x̂⟩ₜ and Δx(t) for 0 ≤ t ≤ 3τ against the analytic results. State how you chose grid extent and spacing so the packet neither reaches the edge nor aliases in momentum, and check that the norm is conserved.
+
+
+=== PROBLEM 4.4: Rectangular barrier, extended to tunneling ===
+**4.4 (extended to tunneling).** Rectangular barrier of height V₀ and width a, particle incident from the left.
+
+(a) For E > V₀, obtain T(E). Show that T = 1 exactly when k₂a = nπ (k₂ the wavenumber inside) and interpret the resonance.
+
+(b) For E < V₀, obtain T(E) by k₂ → iκ, κ = √(2m(V₀ − E))/ħ, in terms of sinh(κa).
+
+(c) Opaque barrier, κa ≫ 1: show T ≈ 16 (E/V₀)(1 − E/V₀) e^{−2κa}.
+
+(d) Numbers. Electron, E = 1 eV, V₀ = 2 eV, a = 1 nm: compute κ and T. By what factor does T change if a = 2 nm? If the particle is a proton at the same E, V₀, a?
+
+(e) Sketch T(E) for 0 < E < 3V₀ from (a)–(c), marking the resonances.
+
+
+=== PROBLEM 4.16b: Harmonic oscillator in a uniform electric field ===
+**4.16b (new: oscillator in a uniform electric field).** A particle of charge q and mass m in ½mω²x² with a uniform field ℰ along x:
+
+Ĥ = p̂²/2m + ½ mω² x̂² − qℰ x̂.
+
+(a) Complete the square: with x̂' = x̂ − x₀ find x₀ such that Ĥ = p̂²/2m + ½ mω² x̂'² + const, and give the constant.
+
+(b) Write all Eₙ(ℰ) and eigenfunctions without solving a differential equation. Sketch the potential and the lowest two eigenfunctions for ℰ = 0 and ℰ ≠ 0 on the same axes.
+
+(c) Show [x̂', p̂] = iħ, so ladder operators built from (x̂', p̂) obey the algebra of Prob. 4.13. Express x̂ and Ĥ in terms of them.
+
+(d) Compute ⟨x̂⟩ and ⟨p̂⟩ in the new ground state, the induced dipole q⟨x̂⟩, and the polarizability α = q⟨x̂⟩/ℰ. Check units.
+
+(e) *Optional, connects to 4.18.* At t = 0 the particle is in the field-free ground state and ℰ is switched on suddenly. Find ⟨x̂⟩ₜ and show it oscillates at ω about x₀ with amplitude x₀.

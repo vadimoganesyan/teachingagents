@@ -22,7 +22,7 @@ This is a pilot for a larger program next spring. Your report is the data.
 
 Do these in order. Quote your own prompts in the report, so write them with that in mind.
 
-1. **Start.** Tell the tutor which problem. When it asks, paste the full problem statement: copy your problem's block from [ps2_problems_5-8.txt](https://github.com/vadimoganesyan/teachingagents/blob/main/ps2_problems_5-8.txt) (plain text, no login; identical to the problem set with the Oct 5 errata; the "Raw" button gives the cleanest copy). Then paste your own attempt, however partial (a photo of handwritten work is fine if the tutor accepts it; otherwise type what you have), and say where you got stuck.
+1. **Start.** Tell the tutor which problem. When it asks, paste the full problem statement: copy your problem's block from [phy240_ps2_problems_5-8.txt](https://github.com/vadimoganesyan/teachingagents/blob/main/phy240_ps2_problems_5-8.txt) (plain text, no login; identical to the problem set with the Oct 5 errata; the "Raw" button gives the cleanest copy). Then paste your own attempt, however partial (a photo of handwritten work is fine if the tutor accepts it; otherwise type what you have), and say where you got stuck.
 2. **Redirect.** Ask: "Tell me which step in my attempt is weakest. Don't fix it." If the tutor starts solving, stop it and say so.
 3. **Work the gap.** Proceed with hints only. Each time the tutor offers a hint, say in the chat whether you accept or reject it and why.
 4. **Check one claim.** Pick one specific thing the tutor asserted. Verify it against the lecture notes, a textbook, or a person. Report the result in the chat.

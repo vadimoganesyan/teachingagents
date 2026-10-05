@@ -1,9 +1,17 @@
-# PHY240 teaching agents (public files)
+# Teaching agents (public files)
 
-Student-facing files for the PHY240 (CUNY, Fall 2026) AI-tutor pilot. Nothing here is private; instructor notes live elsewhere.
+Student-facing files for Vadim Oganesyan's CUNY physics courses, Fall 2026, AI-tutor pilots. Nothing here is private; instructor notes live elsewhere. File names are prefixed by course and problem set.
 
-- `ps2_problems_5-8.txt` — Problem Set 2, problems 5–8, plain text with LaTeX math, for pasting into the tutor. Identical to the problem set after the Oct 5 errata; figures are not included.
-- `ps2_ai_tutor_handout.md` — the assignment handout (protocol, what to submit).
-- `ps2_ai_session_report_template.md` — the report template.
+## PHY240 (Modern Physics and Waves), Problem Set 2
 
-Direct link to the problem text: https://github.com/vadimoganesyan/teachingagents/blob/main/ps2_problems_5-8.txt (use the "Raw" button for a clean copy).
+- `phy240_ps2_problems_5-8.txt` — problems 5–8, plain text with LaTeX math, for pasting into the tutor (post Oct 5 errata; no figures).
+- `phy240_ps2_ai_tutor_handout.md` — assignment handout.
+- `phy240_ps2_ai_session_report_template.md` — report template.
+
+## PHY442 (Quantum Mechanics), Problem Set 3
+
+- `phy442_ps3_problems.txt` — problems 3.7G, 4.4 (extended), 4.16b, plain text, for pasting into the tutor.
+- `phy442_ps3_ai_tutor_handout.md` — assignment handout.
+- `phy442_ps3_ai_session_report_template.md` — report template.
+
+Open a `.txt` file and use the "Raw" button for the cleanest copy.
