@@ -1,0 +1,62 @@
+PHY240 (Fall 2026) Problem Set 2, problems 5-8. Verbatim statements for the PS2 tutor agent. Math is in LaTeX notation. Figures referenced in the original are not reproduced; students have them in the problem set.
+
+
+=== PROBLEM 5: Birefringence and wave plates ===
+*key ideas: birefringence, phase retardation, half- and quarter-wave plates*
+
+[figure: see the problem set]
+
+A birefringent crystal has different indices for the two transverse polarization components, so they accumulate phase at different rates. Cut to the right thickness, the crystal becomes a device that manipulates polarization: a wave plate.
+
+A uniaxial crystal has ordinary index $n_o$ for $\hat y$-polarized light and extraordinary index $n_e<n_o$ for $\hat x$-polarized light, so $\hat x$ is the *fast* axis. A beam of vacuum wavelength $\lambda$ propagates in the $+\hat z$ direction, linearly polarized at angle $\theta$ to $\hat x$, and enters the crystal at $z=0$.
+
+1. Write $\vec E(z=0,t)$ at the entrance face.
+2. Write $\vec E(z,t)$ inside the crystal for $z>0$, keeping track of the different propagation speeds of the two components. Show that the phase lag of the $\hat y$ component relative to the $\hat x$ component is $\Delta\phi=\frac{2\pi z}{\lambda}(n_o-n_e)$.
+3. Describe the polarization state as a function of $z$. At what thickness does the polarization first return to linear? Is it the same linear polarization as at the entrance?
+4. For what minimum thickness $L$ is the output polarization the incident polarization reflected about the $\hat x$ axis? Express $L$ in terms of $\lambda$, $n_o$, $n_e$. What thickness gives reflection about the $\hat y$ axis? Compare the two answers and explain.
+5. For what minimum thickness $L$ is the output circularly polarized? State the required $\theta$. Compare with the preceding results.
+
+
+=== PROBLEM 6: Interference of co-propagating waves ===
+*key ideas: superposition, $\vec B=\hat k\times\vec E/c$, energy density, Poynting vector, intensity*
+
+Superposing two plane waves travelling the same way is the simplest case of interference. Before computing anything about energy flow, check how the magnetic field of the sum is related to its electric field: for a single plane wave $\vec B=\hat k\times\vec E/c$, and the first question is whether that survives superposition.
+
+Two coherent electromagnetic waves of the same frequency propagate in vacuum in the $+x$ direction:
+$$\vec E_1(x,t)=E_{10}\cos(kx-\omega t)\,\hat y,\qquad \vec E_2(x,t)=E_{20}\cos(kx-\omega t+\phi)\,\hat y.$$
+
+1. Find $\vec B_1$ and $\vec B_2$ from Faraday's law. Write the total fields $\vec E=\vec E_1+\vec E_2$ and $\vec B=\vec B_1+\vec B_2$ and show that $\vec B=\hat x\times\vec E/c$ still holds at every $x$ and $t$. Explain in one sentence why superposition preserved this relation here.
+2. Compute the electric and magnetic energy densities, $u_E=\epsilon_0E^2/2$ and $u_B=B^2/2\mu_0$, for the total field. Show that $u_E=u_B$ at every $x$ and $t$, and write the total $u(x,t)$.
+3. Compute the Poynting vector $\vec S=\vec E\times\vec B/\mu_0$ and check that $\vec S=c\,u\,\hat x$. Time-average to get the intensity $I$, and write it in the form $I=I_1+I_2+2\sqrt{I_1I_2}\cos\phi$ with $I_{1,2}$ the intensities of the individual waves. Check that the $\phi=0$ and $\phi=\pi$ cases match what you expect.
+
+
+=== PROBLEM 7: Standing waves ===
+*key ideas: counter-propagating waves, $E$–$B$ misalignment, energy sloshing, zero net energy flow*
+
+Now let the two waves travel in opposite directions. The sum is a standing wave, and the relation $\vec B=\hat k\times\vec E/c$ that survived in the previous problem fails here: there is no single $\hat k$. The consequences for energy are the point of this problem.
+
+The two waves are $\vec E_1(x,t)=E_{10}\cos(kx-\omega t)\,\hat y$ and $\vec E_2(x,t)=E_{20}\cos(kx+\omega t+\phi)\,\hat y$.
+
+1. Find $\vec B_1$ and $\vec B_2$ and the total $\vec B$. Show that $|\vec B|\neq|\vec E|/c$ in general: find a point and time where $\vec E=0$ but $\vec B\neq0$, and vice versa.
+2. What condition on $E_{10}$ and $E_{20}$ makes the total electric field a standing wave, i.e. of the form $f(x)\,g(t)$? Assume it from now on. Write $\vec E$ and $\vec B$ in standing-wave form and find the nodes of each for arbitrary $\phi$. By how much are the $E$-nodes and $B$-nodes displaced from one another in space?
+3. Compute $u_E(x,t)$ and $u_B(x,t)$. Show that they are offset by a quarter wavelength in space and a quarter period in time, so that energy sloshes between electric and magnetic form. Find the total $u(x,t)$ and its time average, and compare the latter with the co-propagating result.
+4. Compute $\vec S(x,t)$ and its time average. Where does $\vec S$ point at a given instant, and why is its time average zero everywhere? Reconcile this with the fact that $u$ oscillates locally.
+
+
+=== PROBLEM 8: Dipole antenna ===
+*key ideas: Fourier transforms of vector fields, longitudinal vs. transverse components, driven oscillators, generation of EM waves*
+
+[figure: see the problem set]
+
+How does an oscillating charge distribution launch a propagating electromagnetic wave? Working one spatial Fourier mode at a time turns Maxwell's equations into algebra plus a driven harmonic oscillator for each mode, and makes clear which part of the current radiates and in which directions.
+
+We use the spatial Fourier-transform convention $f(\vec Q,t)=\int d^3r\,e^{-i\vec Q\cdot\vec r}f(\vec r,t)$, so that $\nabla\to i\vec Q$. For any vector field $\vec F(\vec Q,t)$, the Helmholtz decomposition defines **longitudinal** and **transverse** parts relative to $\vec Q$: $\vec F_L=\hat Q(\hat Q\cdot\vec F)$ and $\vec F_T=\vec F-\vec F_L$, so that $\vec Q\times\vec F_L=0$ and $\vec Q\cdot\vec F_T=0$. Equivalently, $\vec F_L=P_L\vec F$ and $\vec F_T=P_T\vec F$ with projectors $P_L=\hat Q\otimes\hat Q$ and $P_T=1-P_L$.
+
+Two frequencies appear below and must not be confused: $\omega_Q\equiv cQ$, the natural frequency of a free wave with wavevector $\vec Q$, and $\Omega$, the frequency at which the antenna is driven.
+
+1. *Warming up with electrostatics.* Fourier transform Gauss's law, $\nabla\cdot\vec E=\rho/\epsilon_0$, and show that it determines the longitudinal field $\vec E_L(\vec Q)$ in terms of $\rho(\vec Q)$. In electrostatics $\nabla\times\vec E=0$: what does this imply about $\vec E_T$?
+2. Write all four Maxwell equations, with sources $\rho$ and $\vec J$, in spatial Fourier space.
+3. Eliminate $\vec B$: differentiate the Ampère–Maxwell equation with respect to time and use Faraday's law to show that $\ddot{\vec E}+\omega_Q^2\,\vec E_T=-\dot{\vec J}/\epsilon_0$. Why is it only $\vec E_T$ that appears multiplied by $\omega_Q^2$?
+4. Project this equation onto the longitudinal and transverse directions. The transverse part, $\ddot{\vec E}_T+\omega_Q^2\vec E_T=-\dot{\vec J}_T/\epsilon_0$, is a familiar system (you solved it in phy120): name it, its natural frequency, and what plays the role of the driving force. The longitudinal part, $\ddot{\vec E}_L=-\dot{\vec J}_L/\epsilon_0$, is not a new dynamical equation: Fourier transform the continuity equation $\dot\rho+\nabla\cdot\vec J=0$ and combine it with Gauss's law (part 1) to show that $\dot{\vec E}_L=-\vec J_L/\epsilon_0$ follows from them. Gauss's law thus fixes $\vec E_L$ at each instant by $\rho(\vec Q,t)$ alone: the instantaneous Coulomb field, which does not propagate.
+5. *The source: an oscillating dipole.* Two charges $\pm q$ at $\pm\vec d(t)/2$ form a dipole with moment $\vec p=q\vec d$, charge density $\rho(\vec r,t)=q\left[\delta^{(3)}(\vec r-\vec d/2)-\delta^{(3)}(\vec r+\vec d/2)\right]$, and current density $\vec J(\vec r,t)=\frac{q\dot{\vec d}}{2}\left[\delta^{(3)}(\vec r-\vec d/2)+\delta^{(3)}(\vec r+\vec d/2)\right]$, built from the charge velocities $\pm\dot{\vec d}/2$ (check the sign of the second term from the charge and velocity of the particle at $-\vec d/2$). Fourier transform both (*Hint:* $\mathrm{FT}[\delta^{(3)}(\vec r-\vec a)]=e^{-i\vec Q\cdot\vec a}$), check that the total charge $\rho(\vec Q\to0)$ vanishes, and show that for $Qd\ll1$, $\rho(\vec Q,t)\approx-i\vec Q\cdot\vec p(t)$ and $\vec J(\vec Q,t)\approx\dot{\vec p}(t)$. Verify continuity, and note that it involves only $\vec J_L$: the charge density determines $\vec J_L$ and says nothing about $\vec J_T$, which is the part that drives the transverse oscillators of part 4.
+6. *Driven modes.* Let $\vec p(t)=\vec p_0\cos\Omega t$, keeping $Qd\ll1$. Find $\vec J_T(\vec Q,t)$ and the steady-state (particular) solution of the transverse equation. Show that the field of mode $\vec Q$ oscillates at the *drive* frequency $\Omega$, not at $\omega_Q$, with amplitude proportional to $\frac{\Omega^2\,\vec p_{0T}}{\omega_Q^2-\Omega^2}$. (The divergence at $\omega_Q=\Omega$ marks the free modes that the antenna pumps energy into: these are the radiated waves.)
