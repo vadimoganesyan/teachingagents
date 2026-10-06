@@ -5,7 +5,7 @@ Fill every field. Quoted excerpts must be verbatim from your chat (copy and past
 ### Header
 
 - Problem: PS2 problem ___ (5, 6, 7 or 8)
-- Tool: Microsoft Copilot, agent "PHY240 PS2 Tutor"
+- Tool: Microsoft Copilot, agent "PHY240 PS2"
 - Model as reported by Copilot (or "not reported"):
 - Date of session:
 - Total time spent (minutes):

@@ -11,7 +11,7 @@ This is a pilot for a larger program next spring. Your report is the data.
 
 ### The tutor
 
-- Sign in to Microsoft 365 Copilot with your CUNY account (via the CUNY Microsoft 365 page), then open the agent **PHY240 PS2 Tutor**: [chat link](https://m365.cloud.microsoft/chat/agent/T_aa395247-d60f-6c62-d4e7-c117e8205346.f79b5691-eb0e-42fe-8148-e5544a266e73.gpt.a3e87487-5769-4d74-8dfe-7b4502d0220f) <!-- CHECK C6.1: verify this link from a student account; it is the agent chat URL, org-wide chat access enabled Oct 5 -->.
+- Sign in to Microsoft 365 Copilot with your CUNY account (via the CUNY Microsoft 365 page), then open the agent **PHY240 PS2**: [chat link](https://m365.cloud.microsoft/chat/agent/T_aa395247-d60f-6c62-d4e7-c117e8205346.f79b5691-eb0e-42fe-8148-e5544a266e73.gpt.a3e87487-5769-4d74-8dfe-7b4502d0220f) <!-- CHECK C6.1: verify this link from a student account; it is the agent chat URL, org-wide chat access enabled Oct 5 -->.
 - Record the model name Copilot reports, if it reports one. If not, write "not reported".
 - Do not paste personal information into the chat. Copilot is a commercial tool; the session is not private in the way office hours are.
 - The tutor can be wrong. Step 5 below exists to catch that.
